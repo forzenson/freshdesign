@@ -1,0 +1,121 @@
+body {
+	padding:10px;
+}
+.products  li {
+display:inline;
+float:left;
+}
+.personal_area_buttons li {
+float:right;
+background-color: #636466;
+}
+.personal_area_buttons span {
+margin-right: 5px;
+}
+.products a, .personal_area_buttons a {
+	color:white;
+	display: block;
+	height: 40px;
+	padding:0 7px;
+
+}
+.products li, .personal_area_buttons li {
+	height:40px;
+	margin: 0;
+	line-height: 40px;
+}
+.products li:hover, .personal_area_buttons li:hover {
+	background-color: #ccced1;
+	color:black;
+	cursor: pointer;
+	text-decoration-line: none;
+	
+}
+.products a:hover, .personal_area_buttons a:hover {
+	color:black;
+	text-decoration-line: none;
+}
+li {
+list-style-type: none;
+}
+a {
+text-decoration:none;
+}
+#row {
+width:800px;
+background-color:grey;
+margin:0;
+background-color: #D9D4D4;
+}
+.sidebar {
+height:40px;
+background-color:grey;
+margin-top: -10px;
+}
+.products {
+width:500px;
+}
+.search_form {
+height:100%;
+margin-bottom: 200px;
+}
+.route {
+width:100%;
+}
+.input_where {
+width:50%;
+display:inline;
+float:left;
+}
+.input_whence {
+width:20%;
+}
+
+.date_with_option div{
+display:inline;
+}
+
+.input_names {
+	padding: 10px 0 5px 0;
+	color:#636466;
+}
+.glyphicon-menu-down {
+	color:#636466;
+}
+.input-group-btn .btn {
+	border-left:0px solid black;
+}
+.input-group .input-group-addon {
+	background-color: white;
+	border-left:0px solid black;
+}
+#calendar, #transit, #where {
+	padding-right: 0px;
+}
+
+#search_button {
+	background-color: #636466;
+	color:white;
+}
+#search {
+	margin-top: 30px;
+	margin-right: 0px;
+}
+.more_option {
+	font-size: 10px;
+	text-align: center;
+	padding-top: 3px;
+}
+.more_option a {
+	color:#636466;
+}
+.more_option a:hover {
+	color:#636466;
+	text-decoration-line: none;
+}
+.mobile_visible {
+	display: none;
+}
+#white_menu_mobile {
+	display: none;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Test</title>
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="styles/jquery.datetimepicker.css" rel="stylesheet">
+
+<!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    var w = $(window).width(); 
+    if (w <= 795) { 
+      $(".mobile_hidden").css("display", "none");
+      $(".mobile_visible").css("display", "block");
+      $(".row").css("width", "100%");
+      $("#white_menu_down").css("color", "white");
+      $("#where").css("padding-right", "15px");
+      $("#transit").css("padding-right", "15px");
+      $("#search_block_button").css("margin-top", "-20px");
+      $(".search_form").css("margin-bottom", "10px");
+      $("#calendar").css("margin-bottom", "20px");
+      $(".products").css("padding-left", "0");
+    }
+  });
+  </script>
+	<div class="row" id="row">
+		<div class="sidebar">
+			<ul class="products">
+				<li class="mobile_hidden"><a href="#">ПАКЕТНЫЕ ТУРЫ</a></li>
+				<li><a href="#">ЭКСКУРСИОННЫЕ ТУРЫ</a></li>
+        <li class="mobile_visible" id="white_menu_mobile"><a href="#"><span class="glyphicon glyphicon-menu-down" id="white_menu_down"></span></a></li>
+	      <li class="mobile_hidden"><a href="#">БИЛЕТЫ</a></li>
+				<li class="mobile_hidden"><a href="#">ОТЕЛИ</a></li> 
+			</ul>
+			<ul class="personal_area_buttons">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span>ВХОД</a></li>
+				<li><a href="#" class="mobile_hidden"><span class="glyphicon glyphicon-heart"></span>ИЗБРАННЫЕ ТУРЫ</a></li>	
+        <li class="mobile_visible"><a href="#"><span class="glyphicon glyphicon-heart"></span></a></li>
+	 		</ul>
+		</div>
+		<div class="search_form">
+			<form class="main_form" action="" novalidate="novalidate">
+				<div class="form-group">
+    				<div class="col-sm-8" id="where">
+    					<div class ="input_names">
+    						КУДА
+    					</div>
+    					<div class="input-group">
+      						<input type="text" class="form-control" aria-label="...">
+      						<div class="input-group-btn">
+        					<button type="button" class="btn btn-default dropdown-toggle"><span class="glyphicon glyphicon-menu-down"></span></button>
+        					<ul class="dropdown-menu dropdown-menu-right">
+          						<li><a href="#"></a></li>
+        					</ul>
+      					</div>
+    				</div>
+    			</div>
+					<div class="col-sm-4">
+						<div class ="input_names">
+    						ОТКУДА
+    					</div>
+    					<div class="input-group">
+      						<input type="text" id="whence" class="form-control" aria-label="...">
+      						<div class="input-group-btn">
+        					<button type="button" class="btn btn-default dropdown-toggle"><span class="glyphicon glyphicon-menu-down"></span></button>
+        					<ul class="dropdown-menu dropdown-menu-right">
+          						<li><a href="#"></a></li>
+        					</ul>
+      					</div>
+    				</div>
+  				</div>
+  			</div>
+				<div class="form-group">
+    				<div class="col-sm-4 col-xs-6" id="calendar">
+    					<div class ="input_names">
+    						ДАТА НАЧАЛА ТУРА
+    					</div>
+    					<div class="input-group date" >
+  						<input type="text" class="form-control datetimepicker"><span class="input-group-addon" ><i class="glyphicon glyphicon-calendar" ></i></span><input type="text" class="form-control datetimepicker" id="mydate"><span class="input-group-addon" ><i class="glyphicon glyphicon-calendar"></i></span>
+						</div>
+						<script type="text/javascript" src="js/jquery.datetimepicker.full.js"></script>
+      					<script >
+                $(".datetimepicker").datetimepicker(); 
+                </script>
+    				</div>
+    				<div class="col-sm-4 col-xs-6" id="transit">
+						<div class ="input_names">
+    						ПРОЕЗД
+    					</div>
+    					<div class="input-group">
+      						<input type="text" class="form-control" aria-label="...">
+      						<div class="input-group-btn">
+        					<button type="button" class="btn btn-default dropdown-toggle" id="transit_button"><span class="glyphicon glyphicon-menu-down"></span></button>
+        					<ul class="dropdown-menu dropdown-menu-right">
+          						<li><a href="#"></a></li>
+        					</ul>
+      					</div>
+              </div>
+    				</div>
+    				<div class="col-sm-4" id="search">
+						<div class="btn-group-lg" id="search_block_button"><button type="button" class="btn btn-default btn-block" id="search_button">НАЙТИ</button></div>
+						<div class="more_option">
+    						<a href="#">Больше параметров поиска<span class="glyphicon glyphicon-menu-down"></span></a>
+    					</div>
+    				</div>
+  				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
